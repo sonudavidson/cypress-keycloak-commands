@@ -1,4 +1,4 @@
-import { getAuthCodeFromLocation } from "./utils";
+import { getAuthCodeFromLocation,createUUID } from "./utils";
 
 Cypress.Commands.add("kcLogin", (user: string) => {
   Cypress.log({ name: "Login" });
