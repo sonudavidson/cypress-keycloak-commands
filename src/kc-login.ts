@@ -16,7 +16,7 @@ Cypress.Commands.add("kcLogin", (user: string) => {
         response_type: "code",
         approval_prompt: "auto",
         redirect_uri: Cypress.config("baseUrl"),
-        client_id
+        client_id: client_id
       }
     })
       .then(response => {
